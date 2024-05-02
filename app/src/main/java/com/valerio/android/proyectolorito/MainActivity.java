@@ -85,8 +85,8 @@ public class MainActivity extends AppCompatActivity {
 
             } else if (id == R.id.nav_about) {
                 // Aquí puedes agregar la acción para "About Us"
-                Toast.makeText(MainActivity.this, "NAV_ABOUT SELECTED", Toast.LENGTH_SHORT).show();
-
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
             }
 
             // Asegura que el ítem seleccionado se muestre como activo
