@@ -14,6 +14,6 @@
         android:textSize="30dp"
         android:background="#CDDC39"
         android:textStyle="bold"
-        android:text="Fragment suscriptions" />
+        android:text="Fragment \nConstruya su diseño" />
 
 </FrameLayout>

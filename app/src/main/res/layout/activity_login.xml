@@ -52,7 +52,7 @@
         android:layout_marginBottom="16dp"
         android:hint="Correo"
         app:errorEnabled="true"
-        app:layout_constraintBottom_toTopOf="@+id/textEmail"
+        app:layout_constraintBottom_toTopOf="@+id/textContrasena"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
@@ -64,7 +64,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textEmail"
+        android:id="@+id/textContrasena"
         style="?attr/textInputFilledStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -107,8 +107,8 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textEmail"
-        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
+        app:layout_constraintStart_toStartOf="@+id/textContrasena"
+        app:layout_constraintTop_toBottomOf="@+id/textContrasena" />
 
     <Button
         android:id="@+id/filledButton2"

@@ -5,12 +5,12 @@
 
     <item
         android:id="@+id/home"
-        android:title="Home"
+        android:title="Inicio"
         android:icon="@drawable/baseline_home_24"/>
 
     <item
         android:id="@+id/shorts"
-        android:title="Shorts"
+        android:title="Docentes"
         android:icon="@drawable/baseline_whatshot_24"
         />
 
@@ -22,11 +22,11 @@
 
     <item
         android:id="@+id/subscriptions"
-        android:title="Subscriptions"
+        android:title="Reseñas"
         android:icon="@drawable/baseline_subscriptions_24" />
     <item
         android:id="@+id/library"
-        android:title="Library"
+        android:title="Encuesta"
         android:icon="@drawable/baseline_video_library_24" />
 
 </menu>

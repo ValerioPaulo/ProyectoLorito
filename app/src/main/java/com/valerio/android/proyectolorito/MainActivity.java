@@ -13,6 +13,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -32,6 +34,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.Objects;
 
@@ -42,11 +45,21 @@ public class MainActivity extends AppCompatActivity {
     //FloatingActionButton fab;
     DrawerLayout drawerLayout;
     BottomNavigationView bottomNavigationView;
-
+    AutoCompleteTextView autoCompleteTextView;
+    TextInputLayout textInputLayout;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        /////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+        ////////////////////////////////////////////////////////////////////////////////
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         //fab = findViewById(R.id.fab);
@@ -81,7 +94,8 @@ public class MainActivity extends AppCompatActivity {
                 //replaceFragment(new HomeFragment());
             } else if (id == R.id.nav_share) {
                 // Aquí puedes agregar la acción para "Share"
-                Toast.makeText(MainActivity.this, "NAV_SHARE SELECTED", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, RegistroActivity.class);
+                startActivity(intent);
 
             } else if (id == R.id.nav_about) {
                 // Aquí puedes agregar la acción para "About Us"
